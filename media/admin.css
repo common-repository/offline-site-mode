@@ -1,0 +1,101 @@
+/*
+ * Offline Site
+ * Author: http://photoboxone.com/
+ */
+
+.clearfix:before,
+.clearfix:after{
+	display: block;
+	content: '';
+	clear: both;
+	height: 0;
+	overflow: hidden
+}
+
+.offline_site_settings{
+	display: flex;
+	justify-content: space-between;
+}
+.offline_site_advanced {
+	width: 100%;
+}
+.offline_site_sidebar {
+	width: 360px;
+	max-width: 100%;
+	padding-left: 15px;
+}
+	.offline_site_settings img{
+		max-width: 100%;
+	}
+	.offline_site_settings em,
+	.offline_site_settings i{
+		font-style: italic;
+	}
+	.offline_site_settings strong,
+	.offline_site_settings b{
+		font-weight: bold;
+	}
+
+.offline_site_links{
+	padding-bottom: 10px;
+	min-height: 10px;
+	height: 10px;
+	height: auto !important;	
+}
+	.offline_site_links li{
+		display:block;
+		float:left;
+		padding-right: 15px;
+		line-height: 20px
+	}
+		.offline_site_links li img{
+			vertical-align: middle;
+		}
+		.offline_site_links li strong{
+			font-weight: normal;
+		}
+		.offline_site_links li em{
+			font-style: none;
+		}
+.offline_site_sidebar_box {
+	background: #fff;
+	margin-bottom: 10px;
+	border: 1px solid #ddd;
+	padding: 10px;
+}
+.offline_site_sidebar_box h4{
+	margin-top: 0;
+	font-size: 14px;
+	line-height: 20px;
+}
+.offline_site_settings_footer .offline_site_sidebar_box {
+	width: 45%;
+}
+
+.offlinesite-icon-click {
+	position: relative;
+	animation: offlinesite_left 1s ease-in-out infinite;
+	display: inline-block;
+	width: 30px;
+}
+.offlinesite-icon-click .dashicons-arrow-right-alt:before {
+	color: #f00;
+}
+
+@media screen and ( max-width: 767px )
+{
+	.offline_site_advanced,
+	.offline_site_sidebar,
+	.offline_site_settings{
+		display: block;
+	}
+}
+
+@-webkit-keyframes offlinesite_left {
+	0%   { left: 0; }
+	100% { left: 10px; }
+}
+@keyframes offlinesite_left {
+	0%   { left: 0; }
+	100% { left: 10px; }
+}
